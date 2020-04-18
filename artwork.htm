@@ -1,0 +1,787 @@
+<!DOCTYPE html public>
+<html>
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="images/favicon.ico" />
+<style>
+BODY {
+	background : #191919 url('') no-repeat fixed center; 
+	margin:0px
+}
+
+BODY.photo {
+	background-color:#FFFFFF;	
+
+}
+
+
+
+H2 {
+	font: bold 20px Georgia,Times New Roman, Times, Serif;
+	color:#000000;
+}
+
+H3 {
+	font: bold 16px Georgia,Times New Roman, Times, Serif;
+	color:#666666;
+}
+
+PRE {
+	width:500px;
+	font: 11px Georgia,Times New Roman, Times, Serif;
+}
+
+STRONG.faq {
+	color:#FFFFFF;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+
+/* HOMEPAGE */
+.homeintro {
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:0px;
+	margin-bottom:40px;		
+	font: bold  italic 13px Georgia,Times New Roman,Times,Serif;
+	text-align:left;
+	line-height:140%;
+	color:#000000;
+}
+.homeintro A {
+	color:#000000;
+}	
+.homeintro A:hover {
+	font-weight:bold;
+	color:#FFFFFF;
+}	
+
+/* RESOURCES */
+.quote {
+	margin-left:40px;
+	margin-right:40px;
+}
+.quoteauthor {
+	font-weight:bold;
+	color:#666666;
+}
+
+.photoCaption {
+	font: 11px verdana,arial,helvetica,sans;
+	color:#666666;
+	text-align:center;
+}
+
+.popupText {
+	font: 12px verdana,arial,helvetica,sans;
+	color:#000000;
+}
+
+.letter{
+	margin-left:30px;
+	margin-right:30px;
+	font: 12px Georgia,Times New Roman, Times, Serif;
+	color:#330000;
+}
+
+
+.credf {
+	text-align:right;
+	color:#83A84E;
+	font: 11px verdana,arial,helvetica,sans;
+}
+
+.credn {
+	text-align:left;
+	color:#D9D68A;
+	font: bold 11px verdana,arial,helvetica,sans;
+}
+
+.credn2 {
+	text-align:left;
+	color:#D9D68A;
+	font: 11px verdana,arial,helvetica,sans;
+}
+
+.credn2 A {
+	text-align:left;
+	color:#D6B278;
+	font: 11px verdana,arial,helvetica,sans;
+}
+
+.copyrightText {
+	color:#EDFAB2;
+	font: 12px verdana,arial,helvetica,sans;
+}
+.copyrightText A{
+	color:#DBB573;
+	font: 11px verdana,arial,helvetica,sans;
+}
+
+
+INPUT, TEXTAREA {
+	font: 11px courier new, courier, monospace;
+}
+
+.emailFrom {
+	font: bold 12px verdana,arial,helvetica,sans;
+	color:FFFFCC;
+	text-decoration:none;
+}
+.emailMsg {
+	font: 12px verdana,arial,helvetica,sans;
+	line-height:16px;
+	color:FFFFCC;
+}
+
+.emailMsg a:link{
+	font: bold 12px verdana,arial,helvetica,sans;
+	line-height:16px;
+	color:FFFFCC;
+}
+
+.emailMsg a:visited{
+	font: bold 12px verdana,arial,helvetica,sans;
+	line-height:16px;
+	color:FFFFCC;
+}
+
+.emailMsg a:active{
+	font: bold 12px verdana,arial,helvetica,sans;
+	line-height:16px;
+	color:FFFFCC;
+}
+
+
+
+/* FOOTER */
+.copyright {
+	font: 10px verdana,arial,helvetica,sans;
+	color:#666666;
+	text-decoration:none;
+}
+.copyright:hover {
+	font: 10px verdana,arial,helvetica,sans;
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+
+
+.footerNav {
+	font: bold 11px verdana,arial,helvetica,sans;
+	color:#FF6600;
+	text-decoration:none;
+}
+.footerNav:hover {
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+	
+/* FAQS and related pages */
+
+.faqText {
+	color:#283E52;
+	font: 12px verdana,arial,helvetica,sans;
+}
+
+.faqSubhead {
+	color:#283E52;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+.faqText .faq {
+	color:#000000;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+.faqText .header {
+	color:#000000;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+.faqText a:link {
+	color:#3D72A2;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+.faqText a:visited {
+	color:#3D72A2;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+.faqText p {
+	margin-top: 0px;
+}
+
+.faqText a:active {
+	color:#3D72A2;
+	font: bold 12px verdana,arial,helvetica,sans;
+}
+
+.faqText .letter {
+	margin-left:30px;
+	margin-right:30px;
+	font: 12px Georgia,Times New Roman, Times, Serif;
+	color:#15212C;
+}
+
+.faqText .letterhead {
+	font: bold 12px verdana,arial,helvetica,sans;
+	color:#15212C;
+}
+
+.faqText .letterCredit {
+	font: 11px verdana,arial,helvetica,sans;
+	color:#283E52;
+}
+
+.faqText h3 {
+	font: bold 12px verdana,arial,helvetica,sans;
+	color:#000000;
+}
+
+.tlRhead {
+	background-color: #FFFFE7;
+	color: #7E7E7D;
+	font: normal 11px verdana,arial,helvetica,sans;
+}
+
+.tlDhead {
+	color: #7E7E7D;
+	font: normal 11px verdana,arial,helvetica,sans;
+}
+
+.tlRodd {
+	background-color: #A7CABB;
+}
+
+.tlDate {
+	color: #000000;
+	font: bold 12px Georgia,Times New Roman, Times, Serif;
+}
+
+.tlHist {
+	color: #000000;
+	font: normal 11px verdana,arial,helvetica,sans;
+}
+
+.tlYYT {
+	color: #000000;
+	font: normal 11px verdana,arial,helvetica,sans;
+}
+
+.projectTLIndent {
+	margin-left: 45px;
+	margin-right: 20px;
+}
+
+
+
+
+.menu {
+		padding: 0px 20px 10px;
+		background: #000000;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		width: 776px;
+		margin: 0 auto;
+
+		}
+
+.menuImageMap {
+		text-transform: uppercase;
+		background: url('menuunselected.jpg');
+		width: 700px;
+		height: 400px;
+		position: relative;
+		margin-bottom: 10px; font-style:normal; font-variant:normal; font-weight:normal; line-height:1; font-size:1.0em; font-family:Arial, Helvetica, sans-serif
+		}
+
+.menuImageMap a {
+		display: block;
+		text-indent: -100000px;
+		text-decoration: none;
+		}
+
+.menuImageMap:hover .menuOne, .menuImageMap:hover .menuTwo, .menuImageMap:hover .menuThree .menuImageMap:hover .menuFour .menuImageMap:hover .menuFive .menuImageMap:hover .menuSix .menuImageMap:hover .menuSeven{
+		border: 0px solid #000000;
+		}
+
+.menuImageMap li {
+		list-style: none;
+		position: absolute;
+		display: block;
+		}
+
+.menuOne {
+		width: 159px;
+		height: 28px;
+		left: 283px;
+		top: 69px;
+		}
+
+.menuOne a {
+		height: 28px;
+		}
+
+.menuOne a:hover {
+		background: url('menuselected.jpg') -285px -66px;
+		}
+
+
+.menuTwo {
+		width: 159px;
+		height: 28px;
+		left: 283px;
+		top: 105px;
+		}
+
+.menuTwo a {
+		height: 28px;
+		}
+
+.menuTwo a:hover {
+		background: url('menuselected.jpg') -285px -102px;
+		}
+
+
+
+.menuThree {
+		width: 159px;
+		height: 28px;
+		left: 283px;
+		top: 147px;
+		}
+
+.menuThree a {
+		height: 28px;
+		}
+
+.menuThree a:hover {
+		background: url('menuselected.jpg') -285px -144px;
+		}
+		
+.menuFour {
+		width: 189px;
+		height: 38px;
+		left: 273px;
+		top: 188px;
+		}
+
+.menuFour a {
+		height: 38px;
+		}
+
+.menuFour a:hover {
+		background: url('menuselected.jpg') -272px -185px;
+		}
+
+.menuFive {
+		width: 189px;
+		height: 38px;
+		left: 268px;
+		top: 230px;
+		}
+
+.menuFive a {
+		height: 28px;
+		}
+
+.menuFive a:hover {
+		background: url('menuselected.jpg') -272px -227px;
+		}
+		
+.menuSix {
+		width: 229px;
+		height: 38px;
+		left: 248px;
+		top: 271px;
+		}
+
+.menuSix a {
+		height: 38px;
+		}
+
+.menuSix a:hover {
+		background: url('menuselected.jpg') -252px -268px;
+		}
+
+.menuSeven {
+		width: 229px;
+		height: 38px;
+		left: 248px;
+		top: 313px;
+		}
+
+.menuSeven a {
+		height: 38px;
+		}
+
+.menuSeven a:hover {
+		background: url('menuselected.jpg') -242px -310px;
+		}
+
+
+
+.menuImageMap a:hover {
+		text-indent: 0;
+		color: #ffffff;
+		}
+
+.menuImageMap a:hover span {
+		padding: 2px;
+		background-color: #000000;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		}
+		
+div.gallery {
+  margin: 5px;
+  border: 1px solid #FF6600;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #FFFFFF;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  image-orientation: from-image;
+}
+
+div.desc {
+  padding: 2px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #FF6600;
+}
+div.desc:hover {
+  color: #FFFFFF;
+}
+</style>
+	
+<title>Artwork - Solar Cult Archive</title>
+</head>
+<body leftmargin="0" topmargin="0" style="margin: 0px;" marginheight="0" marginwidth="0" bgcolor="#191919">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+	<td align="center" bgcolor="#170E11">
+		<table background="" border="0" cellpadding="0" cellspacing="0" width="730">
+	    <tbody><tr>
+	    <img src="images/logo.png">
+	    </tr>
+    	</tbody></table>
+	</td>
+</tr></tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	 <tbody><tr><td></td></tr>
+	</tbody></table> 
+
+	
+	<table background="" border="0" cellpadding="0" cellspacing="0" width="90%">
+	<tbody>
+		
+		<tr>
+		<td align="left">
+		<img src="images/albanian.gif" alt="" border="0" height="1" width="460"><br>
+		<p><br><font size = "4" color = "white">
+		
+		Skinfaxi<p>
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Another Scythian.jpg">
+		<img src="images/skinfaxi/Another Scythian.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Another Scythian</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/beasts men and gods.jpg">
+		<img src="images/skinfaxi/beasts men and gods.jpg" width="600" height="400">
+		</a>
+		<div class="desc">beasts men and gods</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Big Bonk on Head.jpg">
+		<img src="images/skinfaxi/Big Bonk on Head.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Big Bonk on Head</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Black hound.jpg">
+		<img src="images/skinfaxi/Black hound.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Black hound</div>
+		</div>
+
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/black prince and jackie.jpg">
+		<img src="images/skinfaxi/black prince and jackie.jpg" width="600" height="400">
+		</a>
+		<div class="desc">black prince and jackie</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/BØR.jpg">
+		<img src="images/skinfaxi/BØR.jpg" width="600" height="400">
+		</a>
+		<div class="desc">BØR</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Cernunnos.jpg">
+		<img src="images/skinfaxi/Cernunnos.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Cernunnos</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Chaoskampf.jpg">
+		<img src="images/skinfaxi/Chaoskampf.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Chaoskampf</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Cheeky moon goddess.jpg">
+		<img src="images/skinfaxi/Cheeky moon goddess.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Cheeky moon goddess</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Equally cheeky shakti.jpg">
+		<img src="images/skinfaxi/Equally cheeky shakti.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Equally cheeky shakti</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Chrome horde.jpg">
+		<img src="images/skinfaxi/Chrome horde.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Chrome horde</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Death.jpg">
+		<img src="images/skinfaxi/Death.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Death</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Divine feminine.jpg">
+		<img src="images/skinfaxi/Divine feminine.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Divine feminine</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Divine masculine and feminine.jpg">
+		<img src="images/skinfaxi/Divine masculine and feminine.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Divine masculine and feminine</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Divine masculine.jpg">
+		<img src="images/skinfaxi/Divine masculine.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Divine masculine</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Fronmg cosmic horror.jpg">
+		<img src="images/skinfaxi/Fronmg cosmic horror.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Fronmg cosmic horror</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Griphon.jpg">
+		<img src="images/skinfaxi/Griphon.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Griphon</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Growth.jpg">
+		<img src="images/skinfaxi/Growth.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Growth</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Hail Odin saell Odin.jpg">
+		<img src="images/skinfaxi/Hail Odin saell Odin.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Hail Odin saell Odin</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Kali.jpg">
+		<img src="images/skinfaxi/Kali.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Kali</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Kurgan hypepothesis.jpg">
+		<img src="images/skinfaxi/Kurgan hypepothesis.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Kurgan hypepothesis</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/meds btfo.jpg">
+		<img src="images/skinfaxi/meds btfo.jpg" width="600" height="400">
+		</a>
+		<div class="desc">meds btfo</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Mana-Yood-Sushai.jpg">
+		<img src="images/skinfaxi/Mana-Yood-Sushai.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Mana-Yood-Sushai</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Moth.jpg">
+		<img src="images/skinfaxi/Moth.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Moth</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/needfire.jpg">
+		<img src="images/skinfaxi/needfire.jpg" width="600" height="400">
+		</a>
+		<div class="desc">needfire</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/othinn.jpg">
+		<img src="images/skinfaxi/othinn.jpg" width="600" height="400">
+		</a>
+		<div class="desc">othinn</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Quest for the grail.jpg">
+		<img src="images/skinfaxi/Quest for the grail.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Quest for the grail</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Rising sun, retarded hornse.jpg">
+		<img src="images/skinfaxi/Rising sun, retarded hornse.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Rising sun, retarded hornse</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Scythian deer.jpg">
+		<img src="images/skinfaxi/Scythian deer.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Scythian deer</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Skymoose.jpg">
+		<img src="images/skinfaxi/Skymoose.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Skymoose</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/solar chad ov koaxala.jpg">
+		<img src="images/skinfaxi/solar chad ov koaxala.jpg" width="600" height="400">
+		</a>
+		<div class="desc">solar chad ov koaxala</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/some bears.jpg">
+		<img src="images/skinfaxi/some bears.jpg" width="600" height="400">
+		</a>
+		<div class="desc">some bears</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Some doodles.jpg">
+		<img src="images/skinfaxi/Some doodles.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Some doodles</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/strange aeons.jpg">
+		<img src="images/skinfaxi/strange aeons.jpg" width="600" height="400">
+		</a>
+		<div class="desc">strange aeons</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/The magician.jpg">
+		<img src="images/skinfaxi/The magician.jpg" width="600" height="400">
+		</a>
+		<div class="desc">The magician</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Vargöld.jpg">
+		<img src="images/skinfaxi/Vargöld.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Vargöld</div>
+		</div>
+		
+		<div class="gallery">
+		<a target="_blank" href="images/skinfaxi/Westas_flame.jpg">
+		<img src="images/skinfaxi/Westas_flame.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Westas flame</div>
+		</div>
+		
+
+
+<p>&nbsp;<p><br></font>
+		</td>
+	</tr>
+	</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+	<td align="center" bgcolor="#170E11">
+		<table border="0" cellpadding="0" cellspacing="0" width="730">
+	    <tbody><tr>
+			<td width="1"><img src="images/albanian.gif" alt="" border="0" height="40" width="1"></td>
+			<td> <div align="center">
+			<a href="index.html" class="footerNav">Home</a>&nbsp;&nbsp;
+			<a href="articles.htm" class="footerNav">Articles</a>&nbsp;&nbsp; 
+			<a href="effort.htm" class="footerNav">Effort Posts</a>&nbsp;&nbsp;
+			<a href="artwork.htm" class="footerNav">Artwork</a> &nbsp;&nbsp; 
+            </td>
+          </tr>
+</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+ </body>
+</html>
