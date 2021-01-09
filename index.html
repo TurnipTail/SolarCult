@@ -435,11 +435,36 @@ INPUT, TEXTAREA {
 		bottom: 0;
 		right: 0;
 		}
+		
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 </style>
 	
 <title>Solar Cult Archive</title>
 <link rel="StyleSheet" href="design.css" type="text/css">
-<meta name="keywords" content="Aesir, Æsir, Allfather, Alvíssmál - The Lay of Alvís, Anglo-Saxon, Asatru, Asatro, Astru, Asgard, Asar, Atlakviða -The Lay of Atli, 
+<meta name="keywords" content="Aesir, Æsir, Allfather, Alvíssmál - The Lay of Alvís, Anglo-Saxon, Asatru, Asatro, Astru, Asgard, Asar, AFA, Atlakviða -The Lay of Atli, 
 	Atlamál hin groenlenzku - The Greenland Lay of Atli,Audhumla, Balder, Baldrs draumar - Baldr's Dreams, Battle of Stamford Bridge, Battle of Teutoburg Forest, Bellows Edda, Bellows translation, Codex Regius, Den ældre Edda, Donar, Dráp Niflunga - The Fall of the Niflungs, Dwarf, Einherjar, Einherjer, Erda,  Fáfnismál - The Lay of Fáfnir, Fornnordiska gudar, fornnordisk  mytologi, Forn Sed, Forn Seðr, Forseti, Freyr, Frey, Frej, Freya, Freja, Freia, Frigg, Frigga, Folklore, Futhark, Fylgja, German, Germanic, Giants, Ginnungagap, Grim, Grímnismál - The Lay of Grímnir, Grípisspá - The Prophecy of Grípir, Guðrúnarkviða I - The First Lay of Gudrún, Guðrúnarkviða in forna - The Second Lay of Gudrún, Guðrúnarkviða in þriðja - The Third Lay of Gudrún, Guðrúnarhvöt - Gudrún's Lament, Hamðismál - The Lay of Hamdir, Hárbarðsljóð - The Lay of Hárbard, Hávamál - The Sayings of Hár, Heathen, Heathenry, Hedendom, Heide, Heimdall, Hel, Hela, Helgi Lays, Helgakviða Hjörvarðssonar - The Lay of Helgi Hjörvardsson, Helgakviða Hundingsbana I - The First Lay of Helgi the Hunding-Slayer, Helgakviða Hundingsbana II - The Second Lay of Helgi the Hunding-Slayer, Helreið Brynhildar - Brynhild's Ride to Hel, Henry Adams Bellows, Heroic Lays in Codex Regius, Hertha, Hervararkviða - The Waking of Angantýr, Hlöðskviða - Lay of Hlöd, Holda, Holda, Holde, Huginn, Hymiskviða - The Lay of Hymir, Hyndluljóð - The Lay of Hyndla , Icelandic, Icelandic Sagas, Idun, Idunn, Iðun, Jörmunrekkr Lays, Jotuns, Jötuns, Jotunheim, Jotunheimr, Jötunheim, Jötunheimr, Kvasir, Lays not in Codex Regius, Lindisfarne, Ljossalf, Lokasenna - The Flyting of Loki, Loki, Lodur, Lodurr, Loðurr, Midgard, Mimir, Muninn, Myths, Mythology, Nerthus, Niflung Cycle, Njord, Norns, Norse, Norse religion, Norse Gods, Oddrúnarkviða - The Lament of Oddrún, Odin, Odhinn, Oden, Old Norse, Old Norse Translations, Old Ways, Pagan, Paganism, Poetic Edda, Poetry, Prose Edda, Reginsmál - The Lay of Regin, Rígsþula - The Lay of Ríg, Runestone,  Sagas, Scandinavian, Sigrdrífumál - The Ballad of the Victory-Bringer, Sigurðarkviða hin skamma - The Short Lay of Sigurd, Sigurðarkviða in meiri (Brot) - Fragment of a Sigurd Lay, Skadhi, Skaði, Skírnismál - The Lay of Skírnir, Sleipner, Solar, Solar Cult, Sólarljóð - Poems of the Sun, Spiritual, Stamford Bridge, Svartalf, Svipdagsmál I: Grógaldr - The Spell of Gróa, Svipdagsmál II: Fjölsvinnsmál - The Lay of Fjölsvid, Gróttasöngr - The Song of Grotti, Teutoburg Forest, Tiwaz, The Poetic Edda, The Nine Worlds, The Northern Way, Thor, Þrymskviða - The Lay of Thrym, Thunar, Thyrfing, Tor, Tyr, Tyrfing, Urda, Vafþrúðnismál - The Lay of Vafthrúdnir, Valknot, Valkyrie, Valhalla, Vaner, Vanir, Verse, Vikings, Viking Age, Vinland, Vitki, Völundarkviða - The Lay of Völund, Voluspa.org, Voluspa, Völuspá, Völuspá  - The Prophecy of the Seeress, Völuspá in skamma - The Short Seeress' Prophecy, Volva, Wuotan, Wodanaz, Wodan, Yggdrasil, Ymir">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
@@ -478,7 +503,14 @@ INPUT, TEXTAREA {
 <p align = "right">HAIL, Unconquerable Sun! Thou illuminating sphere, who brings the Light of Life upon the World, guide my hand through this duty done in your noble and unspeakable name! Set alight the burning fire of Truth in my eyes and fill my soul with the Heat of the Sun Disc so that this task is made sanctified and holy, blessed by your radiant beams. To you, Immortal One, all awakened Men turn their heads towards, and seek in your effulgence self-actualization and total completeness.</p>
 <p align = "right">The savior of Western Civilization will not come from the revulsion of our ailments but from the character and resolve to contest our domain. The commons must unite in solidarity against the rising horde of apathy. No longer will the people of the West sit idly by while we watch what we have built succumb to degeneracy. Action is our only course as it has been since time immemorial.</p>
 <p align = "right">This website serves as an archive for notable works created by Traditional Pagans in the modern age. The links below will help navigate you to the archives.</p>
-<p align = "right">Affiliated Links<br><a href="https://t.me/solarcult" target="_blank" rel="noopener noreferrer" class="footerNav">Sun Riders Telegram</a></p>
+
+<p align = "right">Affiliated Links
+	<br>
+	<a href="https://t.me/solarcult" target="_blank" rel="noopener noreferrer" class="footerNav">Sun Riders Telegram</a>
+	<br>
+	<a href="https://taliesinsmap.blogspot.com/" title="A curse upon those who disrespect O'Gravy!" target="_blank" rel="noopener noreferrer" class="footerNav">O'Gravy's Blog</a>
+</p>
+
 <p>&nbsp;<p><br></font>
 		</td>
 	</tr>
