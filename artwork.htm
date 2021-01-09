@@ -463,6 +463,43 @@ div.desc {
 div.desc:hover {
   color: #FFFFFF;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
 </style>
 	
 <title>Artwork - Solar Cult Archive</title>
@@ -481,315 +518,73 @@ div.desc:hover {
 </table>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody><tr>
+<tbody>
 <td align="center">
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-	 <tbody><tr><td></td></tr>
-	</tbody></table> 
-
-	
+	</table> 
 	<table background="" border="0" cellpadding="0" cellspacing="0" width="90%">
 	<tbody>
 		
-		<tr>
-		<td align="left">
-		<img src="images/albanian.gif" alt="" border="0" height="1" width="460"><br>
-		<p><br><font size = "4" color = "white">
 		
-		Skinfaxi<p>
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Alter of Ullr.jpg">
-		<img src="images/skinfaxi/Alter of Ullr.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Alter of Ullr</div>
-		</div>
+		<td align="center">
+		<br>
+		<br>
+		<font size = "4" color = "white">
 		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Another Scythian.jpg">
-		<img src="images/skinfaxi/Another Scythian.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Another Scythian</div>
-		</div>
+		Artwork by Skinfaxi<p>
 		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/beasts men and gods.jpg">
-		<img src="images/skinfaxi/beasts men and gods.jpg" width="600" height="400">
-		</a>
-		<div class="desc">beasts men and gods</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Big Bonk on Head.jpg">
-		<img src="images/skinfaxi/Big Bonk on Head.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Big Bonk on Head</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Black hound.jpg">
-		<img src="images/skinfaxi/Black hound.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Black hound</div>
-		</div>
-
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/black prince and jackie.jpg">
-		<img src="images/skinfaxi/black prince and jackie.jpg" width="600" height="400">
-		</a>
-		<div class="desc">black prince and jackie</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/BØR.jpg">
-		<img src="images/skinfaxi/BØR.jpg" width="600" height="400">
-		</a>
-		<div class="desc">BØR</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Cernunnos.jpg">
-		<img src="images/skinfaxi/Cernunnos.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Cernunnos</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Chaoskampf.jpg">
-		<img src="images/skinfaxi/Chaoskampf.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Chaoskampf</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Cheeky moon goddess.jpg">
-		<img src="images/skinfaxi/Cheeky moon goddess.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Cheeky moon goddess</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Equally cheeky shakti.jpg">
-		<img src="images/skinfaxi/Equally cheeky shakti.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Equally cheeky shakti</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Chrome horde.jpg">
-		<img src="images/skinfaxi/Chrome horde.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Chrome horde</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Death.jpg">
-		<img src="images/skinfaxi/Death.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Death</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Divine feminine.jpg">
-		<img src="images/skinfaxi/Divine feminine.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Divine feminine</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Divine masculine and feminine.jpg">
-		<img src="images/skinfaxi/Divine masculine and feminine.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Divine masculine and feminine</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Divine masculine.jpg">
-		<img src="images/skinfaxi/Divine masculine.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Divine masculine</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/forgot chain mail.jpg">
-		<img src="images/skinfaxi/forgot chain mail.jpg" width="600" height="400">
-		</a>
-		<div class="desc">forgot chain mail</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Fronmg cosmic horror.jpg">
-		<img src="images/skinfaxi/Fronmg cosmic horror.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Fronmg cosmic horror</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Griphon.jpg">
-		<img src="images/skinfaxi/Griphon.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Griphon</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Growth.jpg">
-		<img src="images/skinfaxi/Growth.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Growth</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Hail Odin saell Odin.jpg">
-		<img src="images/skinfaxi/Hail Odin saell Odin.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Hail Odin saell Odin</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Kali.jpg">
-		<img src="images/skinfaxi/Kali.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Kali</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Kurgan hypepothesis.jpg">
-		<img src="images/skinfaxi/Kurgan hypepothesis.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Kurgan hypepothesis</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/little fella.jpg">
-		<img src="images/skinfaxi/little fella.jpg" width="600" height="400">
-		</a>
-		<div class="desc">little fella</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Mana-Yood-Sushai.jpg">
-		<img src="images/skinfaxi/Mana-Yood-Sushai.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Mana-Yood-Sushai</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/meds btfo.jpg">
-		<img src="images/skinfaxi/meds btfo.jpg" width="600" height="400">
-		</a>
-		<div class="desc">meds btfo</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Moth.jpg">
-		<img src="images/skinfaxi/Moth.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Moth</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/needfire.jpg">
-		<img src="images/skinfaxi/needfire.jpg" width="600" height="400">
-		</a>
-		<div class="desc">needfire</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/othinn.jpg">
-		<img src="images/skinfaxi/othinn.jpg" width="600" height="400">
-		</a>
-		<div class="desc">othinn</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/pagang.jpg">
-		<img src="images/skinfaxi/pagang.jpg" width="600" height="400">
-		</a>
-		<div class="desc">pagang</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Quest for the grail.jpg">
-		<img src="images/skinfaxi/Quest for the grail.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Quest for the grail</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Rising sun, retarded hornse.jpg">
-		<img src="images/skinfaxi/Rising sun, retarded hornse.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Rising sun, retarded hornse</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Scythian deer.jpg">
-		<img src="images/skinfaxi/Scythian deer.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Scythian deer</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Skymoose.jpg">
-		<img src="images/skinfaxi/Skymoose.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Skymoose</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/solar chad ov koaxala.jpg">
-		<img src="images/skinfaxi/solar chad ov koaxala.jpg" width="600" height="400">
-		</a>
-		<div class="desc">solar chad ov koaxala</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/some bears.jpg">
-		<img src="images/skinfaxi/some bears.jpg" width="600" height="400">
-		</a>
-		<div class="desc">some bears</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Some doodles.jpg">
-		<img src="images/skinfaxi/Some doodles.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Some doodles</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/strange aeons.jpg">
-		<img src="images/skinfaxi/strange aeons.jpg" width="600" height="400">
-		</a>
-		<div class="desc">strange aeons</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/The magician.jpg">
-		<img src="images/skinfaxi/The magician.jpg" width="600" height="400">
-		</a>
-		<div class="desc">The magician</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/the mysteries.jpg">
-		<img src="images/skinfaxi/the mysteries.jpg" width="600" height="400">
-		</a>
-		<div class="desc">the mysteries</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Vargöld.jpg">
-		<img src="images/skinfaxi/Vargöld.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Vargöld</div>
-		</div>
-		
-		<div class="gallery">
-		<a target="_blank" href="images/skinfaxi/Westas_flame.jpg">
-		<img src="images/skinfaxi/Westas_flame.jpg" width="600" height="400">
-		</a>
-		<div class="desc">Westas flame</div>
-		</div>
+<div class="row">
+  <div class="column">
+    <img src="images/skinfaxi/Alter of Ullr.jpg">
+    <img src="images/skinfaxi/Another Scythian.jpg">
+    <img src="images/skinfaxi/beasts men and gods.jpg">
+    <img src="images/skinfaxi/Big Bonk on Head.jpg">
+    <img src="images/skinfaxi/Black hound.jpg">
+    <img src="images/skinfaxi/black prince.jpg">
+	<img src="images/skinfaxi/BOAR.jpg">
+    <img src="images/skinfaxi/Cernunnos.jpg">
+    <img src="images/skinfaxi/Chaoskampf.jpg">
+    <img src="images/skinfaxi/Cheeky moon goddess.jpg">
+	<img src="images/skinfaxi/Chrome horde.jpg">
+	<img src="images/skinfaxi/Death.jpg">
+  </div>
+  <div class="column">
+    <img src="images/skinfaxi/Divine feminine.jpg">
+    <img src="images/skinfaxi/Divine masculine and feminine.jpg">
+    <img src="images/skinfaxi/Divine masculine.jpg">
+    <img src="images/skinfaxi/Equally cheeky shakti.jpg">
+	<img src="images/skinfaxi/forgot chain mail.jpg">
+    <img src="images/skinfaxi/Fronmg cosmic horror.jpg">
+    <img src="images/skinfaxi/Griphon.jpg">
+    <img src="images/skinfaxi/Growth.jpg">
+    <img src="images/skinfaxi/Hail Odin saell Odin.jpg">
+	<img src="images/skinfaxi/Kali.jpg">
+  </div>
+  <div class="column">
+    <img src="images/skinfaxi/Kurgan hypepothesis.jpg">
+    <img src="images/skinfaxi/little fella.jpg">
+    <img src="images/skinfaxi/Mana-Yood-Sushai.jpg">
+    <img src="images/skinfaxi/meds btfo.jpg">
+	<img src="images/skinfaxi/Moth.jpg">
+    <img src="images/skinfaxi/needfire.jpg">
+    <img src="images/skinfaxi/othinn.jpg">
+    <img src="images/skinfaxi/pagang.jpg">
+    <img src="images/skinfaxi/Quest for the grail.jpg">
+	<img src="images/skinfaxi/Rising sun, retarded hornse.jpg">
+  </div>
+  <div class="column">
+    <img src="images/skinfaxi/Scythian deer.jpg">
+    <img src="images/skinfaxi/Skymoose.jpg">
+    <img src="images/skinfaxi/solar chad ov koaxala.jpg">
+    <img src="images/skinfaxi/some bears.jpg">
+	<img src="images/skinfaxi/Some doodles.jpg">
+    <img src="images/skinfaxi/strange aeons.jpg">
+    <img src="images/skinfaxi/The magician.jpg">
+    <img src="images/skinfaxi/the mysteries.jpg">
+    <img src="images/skinfaxi/Vargold.jpg">
+	<img src="images/skinfaxi/Westas_flame.jpg">
+  </div>
+</div>
 		
 	
 
